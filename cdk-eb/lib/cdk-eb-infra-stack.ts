@@ -78,7 +78,7 @@ export class CdkEbInfraStack extends cdk.Stack {
     const elbEnv = new elasticbeanstalk.CfnEnvironment(this, 'Environment', {
       environmentName: 'MyWebAppEnvironment',
       applicationName: app.applicationName || appName,
-      solutionStackName: '64bit Amazon Linux 2 v5.4.4 running Node.js 14',
+      solutionStackName: '64bit Amazon Linux 2 v5.5.2 running Node.js 16',
       optionSettings: optionSettingProperties,
       versionLabel: appVersionProps.ref,
     });
